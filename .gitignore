@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+*.env
+
+# Model offload folder
+offload/
+
+# Model weight files
+*.pt
+*.ckpt
+*.safetensors
+
+# Large results file (committed separately if needed)
+antahkarana_v4_results.json
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
