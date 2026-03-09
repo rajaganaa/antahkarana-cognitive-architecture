@@ -1,0 +1,31 @@
+{
+  "experiment": "Antahkarana v4 Adaptive Patent Build",
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "n_samples": 20,
+  "finished_at": "2026-03-09 05:43:04",
+  "benchmark_results": {
+    "hotpot_joint_f1": {"direct": "0.00%", "cot": "8.67%", "buddhi_v4": "45.12%"},
+    "gsm8k_em": {"direct": "25.00%", "cot": "50.00%", "buddhi_v4": "70.00%"},
+    "truthfulqa_f1": {"direct": "28.37%", "cot": "17.48%", "buddhi_v4": "43.02%"},
+    "halueval_acc": {"direct": "55.00%", "cot": "75.00%", "buddhi_v4": "55.00%"}
+  },
+  "efficiency": {
+    "avg_stages_per_question": 4.05,
+    "v3_stages": 7,
+    "stage_savings_pct": "42%",
+    "complexity_distribution": {"multihop": 19, "comparison": 1}
+  },
+  "patent_claims": [
+    "Rule-based complexity classifier in Manas (zero LLM overhead)",
+    "Adaptive BuddhiController routing to minimal required stages",
+    "Lazy Chitta: encode_simple() skips evidence scoring for SIMPLE",
+    "Per-question token and call tracking via Sakshi routing log",
+    "Ahamkara logs complexity tier + stage count per decision"
+  ],
+  "version_progression": {
+    "v1": {"hotpot": "45.50%", "gsm8k": "40.00%", "truthfulqa": "38.22%", "halueval": "50.00%"},
+    "v2": {"hotpot": "67.33%", "gsm8k": "70.00%", "truthfulqa": "41.46%", "halueval": "60.00%"},
+    "v3": {"hotpot": "67.33%", "gsm8k": "70.00%", "truthfulqa": "41.46%", "halueval": "60.00%"},
+    "v4": {"hotpot": "45.12%", "gsm8k": "70.00%", "truthfulqa": "43.02%", "halueval": "55.00%"}
+  }
+}
